@@ -64,6 +64,13 @@ body {
     font-weight: 800;
     display: inline-block;
     margin-bottom: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.badge:hover,
+.badge:focus {
+    transform: scale(1.05); 
+    outline: none; 
 }
 
 .published-date {
@@ -78,7 +85,14 @@ body {
     margin: 0;
     margin-bottom: 8px;
     font-size: 25px;
-    
+    transition: color 0.3s, transform 0.3s;
+}
+
+.card-title:hover,
+.card-title:focus {
+    color: hsl(47, 88%, 63%); /* Cambia il colore in giallo */
+    transform: scale(1.02); /* Leggero zoom */
+    outline: none;
 }
 
 p {
@@ -104,11 +118,19 @@ p {
     width: 40px;
     height: 40px;
     object-fit: cover;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.author-image:hover,
+.author-image:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge ombra */
+    transform: scale(1.1); /* Leggero zoom */
+    outline: none;
 }
 
 .author-name {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 800;
     margin: 0;
 }
 
