@@ -15,7 +15,101 @@
 
 
 body {
+    margin: 0;
+    min-height: 100vh;
     background-color: hsl(47, 88%, 63%);
+    display: grid;
+    place-items: center;
+    font-family: 'Figtree', sans-serif;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    max-width: 384px;
+    max-height: 522px;
+    overflow: hidden;
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
+    text-align: left;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-image-wrapper {
+    padding: 16px; /* Padding attorno all'immagine */
+    display: flex;
+    justify-content: center; /* Centrare l'immagine */
+    align-items: center;
+    background-color: #fff; /* Sfondo bianco come nel design */
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.badge { 
+    max-width: fit-content;
+    background-color: hsl(47, 88%, 63%);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.published-date {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 25px;
+    
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-description {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.author-image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
 }
 
 .attribution { 
