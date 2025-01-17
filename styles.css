@@ -135,6 +135,8 @@ p {
 }
 
 .attribution { 
+    position: fixed;
+    bottom: 30px;
     font-size: 11px; text-align: center; 
 }
 
@@ -142,4 +144,25 @@ p {
     color: hsl(228, 45%, 44%); 
 }
 
+@media (max-width: 425px) {
+    .card {
+        max-width: 270px;
+        max-height: 501px;
+    }
 
+    .card-title {
+        font-size: 17px;
+    }
+
+    .card-description {
+        font-size: 12px;
+    }
+
+    .badge {
+        font-size: 14px;
+    }
+    
+    .published-date {
+        font-size: 12px;
+    }
+}
